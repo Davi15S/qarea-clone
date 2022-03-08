@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 function NavbarItemMobile({ text, border_t, chevron, dropDown, height }) {
     const [isActive, setIsActive] = useState(false)
     return (
-        <div>
+        <div className={isActive && chevron == null && "border-b border-[#313131]"}>
             <div
                 onClick={() => setIsActive(!isActive)}
                 className={!isActive ? `navbarItem ${border_t}` : `navbarItem ${border_t} text-red-500 bg-[#1c1c1c]`}>

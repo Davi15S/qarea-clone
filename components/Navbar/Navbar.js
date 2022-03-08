@@ -23,20 +23,20 @@ function Navbar() {
             <div className={!hamburgerActive ? "h-[64px] lg:h-[96px] flex items-center" : "h-[64px] flex items-center"}>
                 <div className='px-5 flex flex-grow z-30 bg-[#1c1c1c] justify-center h-full'>
                     <div className='flex items-center relative max-w-6xl flex-grow justify-between '>
-                        <Image src={"https://qarea.com/wp-content/themes/qarea/webpack-wp-3/dist/assets/img/logo_dark.svg?x89583"} objectFit="contain" height={50} width={160} />
+                        <Image src={"https://qarea.com/wp-content/themes/qarea/webpack-wp-3/dist/assets/img/logo_dark.svg?x89583"} objectFit="contain" height={50} width={160} className="cursor-pointer"/>
                         <div onClick={SetNavbarActive} className={hamburgerActive ? "hamburger-menu open" : "hamburger-menu lg:hidden"}>
                             <div className='hamburger-menu-btn'></div>
                         </div>
                         {!hamburgerActive && <>
                             <div className='lg:flex space-x-5 hidden'>
-                                <NavbarItem text={"Company"} />
-                                <NavbarItem text={"Services"} />
-                                <NavbarItem text={"Technologies"} />
-                                <NavbarItem text={"Industries"} />
+                                <NavbarItem text={"Company"} component={<Company />}/>
+                                <NavbarItem text={"Services"} component={<Services />}/>
+                                <NavbarItem text={"Technologies"} component={<Technologies />}/>
+                                <NavbarItem text={"Industries"} component={<Industries />}/>
                                 <NavbarItem text={"Portfolio"} chevron={false} />
-                                <NavbarItem text={"Content"} />
+                                <NavbarItem text={"Content"} component={<Content />}/>
                             </div>
-                            <div className='text-white font-semibold border border-white px-8 py-2 rounded-full lg:flex hover:bg-white hover:text-black transition-all duration-200 cursor-pointer hidden'>
+                            <div className='text-white font-semibold border border-white z-30 px-8 py-2 rounded-full lg:flex hover:bg-white hover:text-black transition-all duration-200 cursor-pointer hidden'>
                                 Contact Us
                             </div></>}
                     </div>
@@ -59,7 +59,7 @@ function Navbar() {
                                 <NavbarItemMobile text="Services" dropDown={<Services />} height={230} />
                                 <NavbarItemMobile text="Technologies" dropDown={<Technologies />} height={230} />
                                 <NavbarItemMobile text="Industries" dropDown={<Industries />} height={390} />
-                                <NavbarItemMobile text="Portfolio" chevron={true} />
+                                <NavbarItemMobile text="Portfolio" chevron={false} />
                                 <NavbarItemMobile text="Content" dropDown={<Content />} height={180} />
                             </div>
                         </motion.div>
