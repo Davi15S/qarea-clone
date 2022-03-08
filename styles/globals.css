@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 .navbarItem {
-  @apply flex p-5 px-7 pr-12 items-center border-t border-[#313131] justify-between transition-all duration-150
+  @apply flex p-5 px-7 pr-12 items-center border-b border-[#313131] justify-between transition-all duration-150 cursor-pointer
 }
 
 .hamburger-menu {
-  position: relative;
+  position: absolute;
+  right: 0px;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .hamburger-menu-btn::after,
