@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import disableScroll from 'disable-scroll';
 import { AnimatePresence, motion } from "framer-motion"
-import { ChevronDownIcon } from "@heroicons/react/solid"
 import Company from './Company';
 import NavbarItemMobile from './NavbarItemMobile';
 import Services from './Services';
@@ -29,12 +27,12 @@ function Navbar() {
                         </div>
                         {!hamburgerActive && <>
                             <div className='lg:flex space-x-5 hidden'>
-                                <NavbarItem text={"Company"} component={<Company />}/>
-                                <NavbarItem text={"Services"} component={<Services />}/>
-                                <NavbarItem text={"Technologies"} component={<Technologies />}/>
-                                <NavbarItem text={"Industries"} component={<Industries />}/>
+                                <NavbarItem text={"Company"} component={<Company />} height={320}/>
+                                <NavbarItem text={"Services"} component={<Services />} height={265}/>
+                                <NavbarItem text={"Technologies"} component={<Technologies />} height={320}/>
+                                <NavbarItem text={"Industries"} component={<Industries />} height={430}/>
                                 <NavbarItem text={"Portfolio"} chevron={false} />
-                                <NavbarItem text={"Content"} component={<Content />}/>
+                                <NavbarItem text={"Content"} component={<Content />} height={210}/>
                             </div>
                             <div className='text-white font-semibold border border-white z-30 px-8 py-2 rounded-full lg:flex hover:bg-white hover:text-black transition-all duration-200 cursor-pointer hidden'>
                                 Contact Us
