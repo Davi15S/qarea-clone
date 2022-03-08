@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbarItem {
+  @apply flex p-5 px-7 pr-12 items-center border-t border-[#313131] justify-between transition-all duration-150
+}
+
+.hamburger-menu {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu-btn::after,
+.hamburger-menu-btn::before {
+  content: "";
+  position: absolute;
+  background-color: #ff3333;
+  border-radius: 25px;
+  height: 4px;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger-menu-btn::after {
+  transform: translateY(-7px);
+  width: 36px;
+}
+
+.hamburger-menu-btn::before {
+  transform: translateY(7px);
+  width: 26px;
+}
+
+.open .hamburger-menu-btn::after {
+  transform: rotate(45deg);
+}
+
+.open .hamburger-menu-btn::before {
+  transform: rotate(-45deg);
+  width: 36px;
+}
