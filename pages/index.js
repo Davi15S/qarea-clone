@@ -3,6 +3,7 @@ import Clients from '../components/Body/Clients'
 import Container from '../components/Body/Container'
 import Help from '../components/Body/Help'
 import Hero from '../components/Body/Hero'
+import Projects from '../components/Body/Projects'
 import RedContainer from '../components/Body/RedContainer'
 import Navbar from '../components/Navbar/Navbar'
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Container />
         <RedContainer />
         <Clients />
+        <Projects />
       </div>
     </div>
   )
