@@ -3,6 +3,6 @@ import navbarActiveSlicer from './navbarActiveSlicer'
 
 export const store = configureStore({
     reducer: {
-        navbarActive: navbarActiveSlicer
+        navbarActive: navbarActiveSlicer,
     },
   })

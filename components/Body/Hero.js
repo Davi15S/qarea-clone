@@ -6,7 +6,7 @@ function Hero() {
         <div className="bg-[#111111] pt-[64px] flex justify-center">
             <div className='max-w-6xl w-full px-5 grid grid-cols-1 lg:grid-cols-2'>
                 <div>
-                    <div className='text-white space-y-10 py-40 lg:py-32'>
+                    <div className='text-white space-y-10 py-48 lg:py-32'>
                         <div className='text-4xl font-semibold lg:text-6xl'><span className='text-red-600'>Software Development</span> Company</div>
                         <div className='text-xl'>If you care about speed and quality - you've come to the right place.</div>
                         <div>

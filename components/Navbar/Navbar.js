@@ -18,7 +18,7 @@ function Navbar() {
 
     return (
         <div>
-            <div className={!hamburgerActive ? "h-[64px] lg:h-[96px] flex items-center fixed w-full z-50" : "h-[64px] fixed w-full z-50 flex items-center"}>
+            <div className={!hamburgerActive ? "h-[64px] lg:h-[96px] absolute flex items-center w-full z-50" : "h-[64px] w-full fixed z-50 flex items-center"}>
                 <div className='px-5 flex flex-grow z-50 bg-[#1c1c1c] justify-center h-full'>
                     <div className='flex items-center relative max-w-6xl flex-grow justify-between '>
                         <Image src={"https://qarea.com/wp-content/themes/qarea/webpack-wp-3/dist/assets/img/logo_dark.svg?x89583"} objectFit="contain" height={50} width={160} className="cursor-pointer" />
