@@ -29,8 +29,8 @@ function Projects() {
     }
 
     return (
-        <div className='bg-[#111111] flex justify-center'>
-            <div className='max-w-6xl w-full px-5 py-10 md:py-28'>
+        <div className='bg-[#111111] flex justify-center overflow-hidden'>
+            <div data-aos="fade-up" className='max-w-6xl w-full px-5 py-10 md:py-28'>
                 <div className='flex items-center justify-between'>
                     <div className='text-white text-3xl font-bold'>Our Past Projects</div>
                     <div className='md:flex space-x-8 hidden'>

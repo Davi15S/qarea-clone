@@ -1,10 +1,12 @@
 import { useSelector } from 'react-redux'
+import Awards from '../components/Body/Awards'
 import Clients from '../components/Body/Clients'
 import Container from '../components/Body/Container'
 import Help from '../components/Body/Help'
 import Hero from '../components/Body/Hero'
 import Projects from '../components/Body/Projects'
 import RedContainer from '../components/Body/RedContainer'
+import Testimonials from '../components/Body/Testimonials'
 import Navbar from '../components/Navbar/Navbar'
 
 export default function Home() {
@@ -13,7 +15,6 @@ export default function Home() {
   return (
     <div>
 
-      {/* Navbar */}
       <Navbar />
 
       <div className={navbarActive && "h-screen overflow-hidden"}>
@@ -23,6 +24,8 @@ export default function Home() {
         <RedContainer />
         <Clients />
         <Projects />
+        <Testimonials />
+        <Awards />
       </div>
     </div>
   )
