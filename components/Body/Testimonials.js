@@ -113,9 +113,9 @@ function Testimonials() {
                         </AnimatePresence>
                     </div>
                     <div className='flex space-x-6 items-center justify-center'>
-                        <ArrowLeftIcon onClick={() => paginate(-1)} className={page == 1 ? "text-red-300 h-8 cursor-pointer" : "text-red-600 h-8 cursor-pointer"} />
+                        <ArrowLeftIcon onClick={() => paginate(-1)} className={page == 1 ? "text-red-300 h-8 cursor-pointer transition-all duration-200" : "text-red-600 h-8 cursor-pointer hover:text-black transition-all duration-200"} />
                         <div className='text-red-600 select-none font-semibold text-xl'>{`${page}/6`}</div>
-                        <ArrowRightIcon onClick={() => paginate(1)} className={page == 6 ? "text-red-300 h-8 cursor-pointer" : "text-red-600 h-8 cursor-pointer"} />
+                        <ArrowRightIcon onClick={() => paginate(1)} className={page == 6 ? "text-red-300 h-8 cursor-pointer transition-all duration-200" : "text-red-600 h-8 cursor-pointer hover:text-black transition-all duration-200"} />
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@ function Testimonials() {
 
 function Card({ txt, img, name, position }) {
     return (
-        <div className={`bg-white p-5 space-y-7 py-10 select-none shadow-md`}>
+        <div className="bg-white p-5 space-y-7 py-10 select-none shadow-md">
             <div className='text-[#5a5a5a] font-medium text-lg'>
                 {txt}
             </div>

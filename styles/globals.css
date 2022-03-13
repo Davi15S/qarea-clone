@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbarItem {
-  @apply flex p-5 px-7 pr-12 items-center border-b border-[#313131] justify-between transition-all duration-150 cursor-pointer
+  @apply flex p-5 px-7 pr-12 items-center border-b border-[#313131] justify-between transition-all duration-150 cursor-pointer;
 }
 
 .hamburger-menu {
@@ -45,3 +45,37 @@
   transform: rotate(-45deg);
   width: 36px;
 }
+
+input[type="checkbox"] {
+  appearance: none;
+  height: 25px;
+  width: 25px;
+  outline: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  background-image: url("../media/check.png");
+  background-size: 14px 14px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:hover {
+  outline: 1px solid red;
+}
+
+input[type="checkbox"]:checked::after {
+  display: flex;
+}
+
+input[type="checkbox"]:checked {
+  background-color: red;
+  outline: 1px solid red;
+}
+
