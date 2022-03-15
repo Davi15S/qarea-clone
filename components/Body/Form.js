@@ -29,7 +29,7 @@ function Form() {
                             <div className='text-3xl font-bold'>Tell us about your project. Let's get to work!</div>
                         </div>
                         <form onSubmit={sendEmail} className='space-y-8'>
-                            <div className='grid grid-cols-1 space-y-8 md:grid-cols-2 md:space-y-0 gap-7'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 md:space-y-0 gap-x-8 space-y-8'>
                                 <div className='space-y-2'>
                                     <div for="name" className="text-gray-400 text-sm opacity-75">Name*</div>
                                     <input name='name' required className='w-full border-b border-gray-400 outline-none focus:border-gray-600 transition-all duration-500' type="text" />
@@ -45,7 +45,7 @@ function Form() {
                             </div>
                             <div className='flex items-center space-x-5'>
                                 <input required type="checkbox" id='checkbox' />
-                                <div className='text-gray-500'>I agree to the QArea <span className='text-red-600 border-b border-red-600 cursor-pointer'>Cookie Policy</span> and <span className='text-red-600 cursor-pointer border-b border-red-600'>Privacy Policy</span> *</div>
+                                <div className='text-gray-500'>I agree to the QArea <span className='text-red-600 border-b border-red-600 cursor-pointer hover:text-black transition-all duration-300 hover:border-black'>Cookie Policy</span> and <span className='text-red-600 cursor-pointer border-b border-red-600 hover:text-black transition-all duration-300 hover:border-black'>Privacy Policy</span> *</div>
                             </div>
                             <div className='flex flex-col md:flex-row justify-between md:space-y-0 space-y-14 pt-12'>
                                 <button type='submit'><span className='bg-red-600 py-2 px-14 text-white font-semibold rounded-full text-lg border-2 border-red-600 hover:text-red-600 hover:bg-opacity-0 transition-all duration-300'>Submit</span></button>

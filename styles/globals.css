@@ -79,3 +79,43 @@ input[type="checkbox"]:checked {
   outline: 1px solid red;
 }
 
+.cardRow {
+  position: relative;
+  min-width: 36px;
+  min-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardRow-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardRow-btn::after,
+.cardRow-btn::before {
+  content: "";
+  position: absolute;
+  background-color: #ff3333;
+  transition: all 0.4s ease-in-out;
+}
+
+.cardRow-btn::after {
+  width: 2px;
+  height: 16px;
+}
+
+.cardRow-btn::before {
+  height: 2px;
+  width: 16px;
+}
+
+.open .cardRow-btn::after {
+  transform: rotate(-90deg);
+}
+
+.open .cardRow-btn::before {
+  transform: rotate(-180deg);
+}

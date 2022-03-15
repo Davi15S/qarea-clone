@@ -10,6 +10,7 @@ import RedContainer from '../components/Body/RedContainer'
 import Testimonials from '../components/Body/Testimonials'
 import Navbar from '../components/Navbar/Navbar'
 import Head from "next/head"
+import Details from '../components/Body/Details'
 
 export default function Home() {
   const navbarActive = useSelector((state) => state.navbarActive.value)
@@ -32,6 +33,7 @@ export default function Home() {
         <Testimonials />
         <Awards />
         <Form />
+        <Details />
       </div>
     </div>
   )
