@@ -26,7 +26,7 @@ function Hero() {
                         <div><Image src={"https://s8a8b5w5.stackpathcdn.com/wp-content/uploads/2021/01/Clutch_1000_grey.svg"} height={50} width={70} objectFit="contain" /></div>
                     </div>
                 </div>
-                <div className="-right-20 absolute hidden lg:flex">
+                <div className="-right-20 absolute hidden lg:flex flex-col">
                     <lottie-player
                         id="firstLottie"
                         ref={ref}
@@ -36,6 +36,7 @@ function Hero() {
                         src="https://assets8.lottiefiles.com/packages/lf20_vybwn7df.json"
                         style={{ width: "600px", height: "600px" }}
                     ></lottie-player>
+                    <div className='text-white font-semibold text-xs opacity-50'>Animation created by: <span className="underline"><a href="https://lottiefiles.com/x1xgtmdhnl" target="_blank">ChubaMoa</a></span></div>
                 </div>
             </div>
         </div>
