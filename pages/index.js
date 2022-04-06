@@ -11,6 +11,9 @@ import Testimonials from '../components/Body/Testimonials'
 import Navbar from '../components/Navbar/Navbar'
 import Head from "next/head"
 import Details from '../components/Body/Details'
+import News from '../components/Body/News'
+import LetsTalk from '../components/Body/LetsTalk'
+import Footer from '../components/Body/Footer'
 
 export default function Home() {
   const navbarActive = useSelector((state) => state.navbarActive.value)
@@ -34,6 +37,9 @@ export default function Home() {
         <Awards />
         <Form />
         <Details />
+        <News />
+        <LetsTalk />
+        <Footer />
       </div>
     </div>
   )
