@@ -14,6 +14,7 @@ import Details from '../components/Body/Details'
 import News from '../components/Body/News'
 import LetsTalk from '../components/Body/LetsTalk'
 import Footer from '../components/Body/Footer'
+import Comment from '../components/Body/Comment'
 
 export default function Home() {
   const navbarActive = useSelector((state) => state.navbarActive.value)
@@ -40,6 +41,7 @@ export default function Home() {
         <News />
         <LetsTalk />
         <Footer />
+        <Comment />
       </div>
     </div>
   )

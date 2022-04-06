@@ -1,10 +1,19 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import Lottie from "react-lottie"
+import code from "../../lotties/code.json"
 
 function Hero() {
+    const ref = useRef(null);
+
+    useEffect(() => {
+        import("@lottiefiles/lottie-player");
+    }, [])
+
+
     return (
         <div className="bg-[#111111] pt-[64px] flex justify-center">
-            <div className='max-w-6xl w-full px-5 grid grid-cols-1 lg:grid-cols-2'>
+            <div className='max-w-6xl w-full px-5 grid grid-cols-1 lg:grid-cols-2 items-center relative overflow-hidden'>
                 <div>
                     <div className='text-white space-y-10 py-48 lg:py-32'>
                         <div className='text-4xl font-semibold lg:text-6xl'><span className='text-red-600'>Software Development</span> Company</div>
@@ -18,6 +27,17 @@ function Hero() {
                         <div><Image src={"https://s8a8b5w5.stackpathcdn.com/wp-content/uploads/2021/01/cmmi.svg"} height={50} width={70} objectFit="contain" /></div>
                         <div><Image src={"https://s8a8b5w5.stackpathcdn.com/wp-content/uploads/2021/01/Clutch_1000_grey.svg"} height={50} width={70} objectFit="contain" /></div>
                     </div>
+                </div>
+                <div className="-right-20 absolute hidden lg:flex">
+                    <lottie-player
+                        id="firstLottie"
+                        ref={ref}
+                        autoplay
+                        loop
+                        mode="normal"
+                        src="https://assets8.lottiefiles.com/packages/lf20_vybwn7df.json"
+                        style={{ width: "600px", height: "600px" }}
+                    ></lottie-player>
                 </div>
             </div>
         </div>

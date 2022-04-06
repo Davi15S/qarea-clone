@@ -10,7 +10,7 @@ function Footer() {
                 <div>
                     <Image src={"https://qarea.com/wp-content/themes/qarea/assets3/img/logo.svg?x23263"} objectFit="contain" width={159} height={56} />
                 </div>
-                <div className='grid grid-cols-2 gap-10 pt-8'>
+                <div className='grid grid-cols-2 gap-10 pt-8 md:grid-cols-5'>
                     <div className='space-y-5'>
                         <div className='font-semibold text-2xl'>Contacts</div>
                         <div className='text-[#5a5a5a] pt-2'>QArea ltd. Guiseppe Cali street Ta’Xbiex, XBX, Malta</div>
