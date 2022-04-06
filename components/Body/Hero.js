@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-import Lottie from "react-lottie"
-import code from "../../lotties/code.json"
 
 function Hero() {
     const ref = useRef(null);
